@@ -1,0 +1,81 @@
+.adminnavbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.admin-logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Navigation Links */
+.adminnav-links {
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.adminnav-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.adminnav-links a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.adminnav-icon {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+
+  .adminnav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .adminnav-links.active {
+    display: flex;
+  }
+
+  .adminnav-links a {
+    padding: 10px 0;
+    justify-content: center;
+    font-size: 16px;
+  }
+}
