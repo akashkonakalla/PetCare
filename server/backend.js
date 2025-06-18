@@ -34,7 +34,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port number ${PORT}`));
 
 const uri =
-  'mongodb+srv://dhanush:dhanush@cluster0.ar7z0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+  //url of the mongodb 
 const client = new MongoClient(uri);
 
 app.get('/klef/test', async function (req, res) {
